@@ -63,6 +63,7 @@ function notify(msg) {
 
 function openUrlInNewTab(url) {
   chrome.tabs.create({
-    url: url
+    url: url,
+    active: false
   });
 }
